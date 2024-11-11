@@ -10,4 +10,14 @@ class person:
             know this person
         
     """
-    
+    def __initi__(self,name):
+        """ Initialize a new person object. """
+        self.name = name 
+        self.connections = set()
+        
+    def connect(self, person2):
+        """ Connect with person2. 
+        
+        Args: 
+            person2 (Person): the other person to connect to. s
+        """
